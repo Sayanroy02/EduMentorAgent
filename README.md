@@ -115,7 +115,7 @@ The application will be available at: **http://localhost:8000**
 ### Directory Structure
 
 ```
-study-genie/
+CHATBOT_APP/
 │
 ├── agents/
 │   ├── agent.py           # Main conversation agent
