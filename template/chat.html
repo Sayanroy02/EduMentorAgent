@@ -13,7 +13,7 @@
     }
 
     body {
-      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       background: #ffffff;
       color: #1f2937;
       overflow-x: hidden;
@@ -22,12 +22,11 @@
     .app {
       display: flex;
       min-height: 100vh;
-      position: relative;
     }
 
-    /* Sidebar Styles */
+    /* Sidebar */
     .sidebar {
-      width: 280px;
+      width: 300px;
       padding: 24px;
       background: linear-gradient(180deg, #1e40af 0%, #3b82f6 100%);
       color: white;
@@ -37,35 +36,49 @@
     }
 
     .sidebar h2 {
-      font-size: 1.5rem;
-      margin-bottom: 24px;
+      font-size: 1.75rem;
+      margin-bottom: 8px;
       font-weight: 700;
-      animation: fadeInDown 0.5s ease;
+    }
+
+    .sidebar .tagline {
+      font-size: 0.875rem;
+      opacity: 0.9;
+      margin-bottom: 24px;
     }
 
     .session-info {
       margin-bottom: 24px;
-      animation: fadeIn 0.6s ease;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 16px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
     }
 
     .session-info p {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       margin-bottom: 8px;
       opacity: 0.9;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
     }
 
     .session-info code {
       display: block;
       padding: 10px 12px;
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(0, 0, 0, 0.2);
       border-radius: 8px;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       word-break: break-all;
-      backdrop-filter: blur(10px);
+      font-family: 'Courier New', monospace;
     }
 
     #memory_panel {
-      animation: fadeIn 0.7s ease;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 16px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
     }
 
     #memory_panel h3 {
@@ -76,24 +89,55 @@
 
     #memory_list {
       list-style: none;
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    #memory_list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #memory_list::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+
+    #memory_list::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 3px;
+    }
+
+    #memory_list::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.5);
     }
 
     #memory_list li {
-      padding: 10px;
-      margin-bottom: 8px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
       font-size: 0.8rem;
-      line-height: 1.4;
-      backdrop-filter: blur(10px);
-      transition: background 0.2s ease;
+      line-height: 1.5;
+      backdrop-filter: blur(5px);
+      border-left: 3px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.2s ease;
     }
 
     #memory_list li:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.25);
+      border-left-color: rgba(255, 255, 255, 0.8);
+      transform: translateX(4px);
     }
 
-    /* Hamburger Menu */
+    .memory-time {
+      font-size: 0.7rem;
+      opacity: 0.8;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    /* Hamburger */
     .hamburger {
       display: none;
       position: fixed;
@@ -111,41 +155,14 @@
       align-items: center;
       gap: 5px;
       box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-      transition: all 0.3s ease;
     }
 
-    .hamburger:hover {
-      background: #2563eb;
-      transform: scale(1.05);
-    }
-
-    .hamburger span {
-      width: 24px;
-      height: 3px;
-      background: white;
-      border-radius: 2px;
-      transition: all 0.3s ease;
-    }
-
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(7px, 7px);
-    }
-
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
-
-    /* Main Content */
+    /* Main */
     .main {
       flex: 1;
       display: flex;
       flex-direction: column;
       padding: 24px;
-      background: #ffffff;
     }
 
     .error {
@@ -155,7 +172,6 @@
       border-radius: 8px;
       margin-bottom: 16px;
       border-left: 4px solid #dc2626;
-      animation: slideInDown 0.3s ease;
     }
 
     .chat {
@@ -165,26 +181,11 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      scroll-behavior: smooth;
-    }
-
-    .chat::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    .chat::-webkit-scrollbar-track {
-      background: #f3f4f6;
-      border-radius: 4px;
-    }
-
-    .chat::-webkit-scrollbar-thumb {
-      background: #3b82f6;
-      border-radius: 4px;
     }
 
     .msg {
       max-width: 70%;
-      animation: messageSlide 0.3s ease;
+      animation: slideIn 0.3s ease;
     }
 
     .msg.user {
@@ -201,18 +202,11 @@
       background: #f3f4f6;
       color: #1f2937;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease;
-    }
-
-    .bubble:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     .msg.user .bubble {
       background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
       color: white;
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
     }
 
     .bubble .role {
@@ -221,113 +215,154 @@
       margin-bottom: 6px;
       opacity: 0.8;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
-    .bubble .content {
-      line-height: 1.6;
-    }
-
-    /* Markdown styling in messages */
-    .bubble .content h1,
-    .bubble .content h2,
     .bubble .content h3 {
-      margin: 16px 0 8px 0;
-      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 8px;
     }
 
-    .bubble .content h1 { font-size: 1.5rem; }
-    .bubble .content h2 { font-size: 1.25rem; }
-    .bubble .content h3 { font-size: 1.1rem; }
-
-    .bubble .content ul,
-    .bubble .content ol {
+    .bubble .content ul {
       margin: 12px 0;
       padding-left: 24px;
-    }
-
-    .bubble .content li {
-      margin: 6px 0;
-      line-height: 1.5;
-    }
-
-    .bubble .content p {
-      margin: 10px 0;
     }
 
     .bubble .content code {
       background: rgba(0, 0, 0, 0.05);
       padding: 2px 6px;
       border-radius: 4px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.9em;
     }
 
-    .msg.user .bubble .content code {
-      background: rgba(255, 255, 255, 0.2);
+    /* Quiz Mode */
+    .quiz-container {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      border: 2px solid #3b82f6;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 16px 0;
     }
 
-    .bubble .content pre {
-      background: #f5f5f5;
-      padding: 12px;
-      border-radius: 8px;
-      overflow-x: auto;
-      margin: 12px 0;
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 24px;
     }
 
-    .msg.user .bubble .content pre {
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    .bubble .content pre code {
-      background: none;
-      padding: 0;
-    }
-
-    .bubble .content strong {
-      font-weight: 600;
-    }
-
-    .bubble .content blockquote {
-      border-left: 3px solid #3b82f6;
-      padding-left: 12px;
-      margin: 12px 0;
-      color: #6b7280;
-    }
-
-    .sources {
-      margin-top: 12px;
-      font-size: 0.875rem;
-      padding: 12px;
-      background: #eff6ff;
-      border-radius: 8px;
-      border-left: 3px solid #3b82f6;
-    }
-
-    .sources b {
+    .quiz-header h2 {
       color: #1e40af;
-      display: block;
       margin-bottom: 8px;
     }
 
-    .sources ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .sources li {
-      margin-bottom: 6px;
-    }
-
-    .sources a {
+    .quiz-progress {
+      font-size: 0.9rem;
       color: #3b82f6;
-      text-decoration: none;
-      transition: color 0.2s ease;
+      font-weight: 600;
     }
 
-    .sources a:hover {
+    .quiz-question {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .quiz-question h3 {
+      color: #1f2937;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .quiz-option {
+      padding: 14px 18px;
+      background: #f9fafb;
+      border: 2px solid #e5e7eb;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+      user-select: none;
+    }
+
+    .quiz-option:hover {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      transform: translateX(4px);
+    }
+
+    .quiz-option:active {
+      transform: scale(0.98);
+    }
+
+    .quiz-option.selected {
+      background: #dbeafe;
+      border-color: #3b82f6;
+      font-weight: 600;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .quiz-feedback {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+
+    .quiz-feedback.correct {
+      background: #d1fae5;
+      color: #065f46;
+      border-left: 4px solid #10b981;
+    }
+
+    .quiz-feedback.incorrect {
+      background: #fee2e2;
+      color: #991b1b;
+      border-left: 4px solid #ef4444;
+    }
+
+    .quiz-result {
+      text-align: center;
+      padding: 24px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    .quiz-result h2 {
       color: #1e40af;
-      text-decoration: underline;
+      margin-bottom: 16px;
+    }
+
+    .quiz-score {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #3b82f6;
+      margin: 16px 0;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: white;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
     }
 
     /* Composer */
@@ -336,7 +371,6 @@
       gap: 12px;
       padding-top: 16px;
       border-top: 2px solid #f3f4f6;
-      animation: fadeInUp 0.5s ease;
     }
 
     .composer input {
@@ -344,10 +378,7 @@
       padding: 14px 18px;
       border-radius: 12px;
       border: 2px solid #e5e7eb;
-      background: #ffffff;
-      color: #1f2937;
       font-size: 1rem;
-      transition: all 0.2s ease;
     }
 
     .composer input:focus {
@@ -363,35 +394,37 @@
       color: white;
       border: none;
       font-weight: 600;
-      font-size: 1rem;
       cursor: pointer;
-      transition: all 0.2s ease;
       box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
     }
 
-    .composer button:hover {
+    .pdf-upload-btn {
+      padding: 14px 24px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pdf-upload-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+      box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
     }
 
-    .composer button:active {
-      transform: translateY(0);
+    #pdf_input {
+      display: none;
     }
 
-    /* Animations */
-    @keyframes fadeIn {
+    @keyframes slideIn {
       from {
         opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(10px);
       }
       to {
         opacity: 1;
@@ -399,227 +432,24 @@
       }
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes slideInDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes messageSlide {
-      from {
-        opacity: 0;
-        transform: translateX(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    /* Tablet Responsive */
-    @media (max-width: 1024px) {
-      .sidebar {
-        width: 260px;
-      }
-
-      .msg {
-        max-width: 80%;
-      }
-    }
-
-    /* Mobile Responsive */
+    /* Mobile */
     @media (max-width: 768px) {
       .sidebar {
         position: fixed;
-        top: 0;
-        left: 0;
         height: 100vh;
-        width: 75%;
-        max-width: 280px;
         transform: translateX(-100%);
-        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
-        overflow-y: auto;
       }
-
       .sidebar.active {
         transform: translateX(0);
       }
-
       .hamburger {
         display: flex;
       }
-
       .main {
         padding: 80px 12px 12px 12px;
-        width: 100%;
       }
-
-      .chat {
-        padding: 8px;
-        gap: 12px;
-      }
-
       .msg {
         max-width: 85%;
-        width: fit-content;
-      }
-
-      .bubble {
-        padding: 12px 16px;
-        font-size: 0.95rem;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-      }
-
-      .bubble .content {
-        line-height: 1.5;
-      }
-
-      .composer {
-        padding: 12px 0;
-        gap: 8px;
-      }
-
-      .composer input {
-        padding: 12px 14px;
-        font-size: 1rem;
-      }
-
-      .composer button {
-        padding: 12px 20px;
-      }
-    }
-
-    /* Small Phone Responsive */
-    @media (max-width: 480px) {
-      .hamburger {
-        width: 44px;
-        height: 44px;
-        top: 16px;
-        left: 16px;
-      }
-
-      .hamburger span {
-        width: 22px;
-      }
-
-      .sidebar {
-        width: 80%;
-        max-width: 260px;
-        padding: 20px 16px;
-      }
-
-      .sidebar h2 {
-        font-size: 1.25rem;
-        margin-bottom: 20px;
-      }
-
-      .session-info code {
-        font-size: 0.7rem;
-        padding: 8px 10px;
-      }
-
-      #memory_list li {
-        font-size: 0.75rem;
-        padding: 8px;
-      }
-
-      .main {
-        padding: 70px 8px 8px 8px;
-      }
-
-      .chat {
-        padding: 4px;
-        gap: 10px;
-      }
-
-      .msg {
-        max-width: 90%;
-      }
-
-      .bubble {
-        padding: 10px 14px;
-        font-size: 0.9rem;
-        border-radius: 14px;
-      }
-
-      .bubble .role {
-        font-size: 0.7rem;
-        margin-bottom: 4px;
-      }
-
-      .sources {
-        font-size: 0.8rem;
-        padding: 10px;
-        margin-top: 8px;
-      }
-
-      .sources li {
-        margin-bottom: 4px;
-      }
-
-      .composer {
-        padding: 10px 0;
-        gap: 8px;
-      }
-
-      .composer input {
-        padding: 10px 12px;
-        font-size: 0.95rem;
-        border-radius: 10px;
-      }
-
-      .composer button {
-        padding: 10px 16px;
-        font-size: 0.95rem;
-        border-radius: 10px;
-      }
-
-      .error {
-        padding: 10px 12px;
-        font-size: 0.85rem;
-      }
-    }
-
-    /* Extra Small Phones */
-    @media (max-width: 360px) {
-      .main {
-        padding: 65px 6px 6px 6px;
-      }
-
-      .msg {
-        max-width: 92%;
-      }
-
-      .bubble {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-      }
-
-      .composer input {
-        padding: 9px 10px;
-        font-size: 0.9rem;
-      }
-
-      .composer button {
-        padding: 9px 14px;
-        font-size: 0.9rem;
       }
     }
   </style>
@@ -633,13 +463,16 @@
     </button>
 
     <aside class="sidebar" id="sidebar">
-      <h2>EduMentor</h2>
+      <h2>🎓 EduMentor</h2>
+      <p class="tagline">Your AI Study Companion</p>
+      
       <div class="session-info">
-        <p>Session:</p>
+        <p>Active Session</p>
         <code id="session_id"></code>
       </div>
+      
       <div id="memory_panel">
-        <h3>Recent Memory</h3>
+        <h3>📚 Recent History</h3>
         <ul id="memory_list"></ul>
       </div>
     </aside>
@@ -649,7 +482,11 @@
       <div class="chat" id="chat_box"></div>
 
       <form id="chat_form" class="composer" onsubmit="return sendMessage(event)">
-        <input id="message_input" placeholder="Ask about study topics..." autocomplete="off"/>
+        <input type="file" id="pdf_input" accept=".pdf" onchange="handlePDFUpload(event)"/>
+        <label for="pdf_input" class="pdf-upload-btn">
+          📄 Upload PDF
+        </label>
+        <input id="message_input" placeholder="Ask anything or say 'Take a test on Python for class 11'..." autocomplete="off"/>
         <button type="submit">Send</button>
       </form>
     </main>
@@ -658,129 +495,339 @@
 <script>
 const sessionKey = "edu_session_id";
 let sessionId = localStorage.getItem(sessionKey) || "";
+let currentQuizId = null;
+let selectedAnswer = null;
 
 document.getElementById("session_id").innerText = sessionId || "(new session)";
 
 function toggleSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const hamburger = document.getElementById("hamburger");
-  sidebar.classList.toggle("active");
-  hamburger.classList.toggle("active");
+  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("hamburger").classList.toggle("active");
 }
 
-// Close sidebar when clicking outside on mobile
-document.addEventListener('click', function(event) {
-  const sidebar = document.getElementById("sidebar");
-  const hamburger = document.getElementById("hamburger");
-  const isClickInsideSidebar = sidebar.contains(event.target);
-  const isClickOnHamburger = hamburger.contains(event.target);
-  
-  if (!isClickInsideSidebar && !isClickOnHamburger && sidebar.classList.contains('active')) {
-    sidebar.classList.remove('active');
-    hamburger.classList.remove('active');
-  }
-});
-
-function showError(text){
+function showError(text) {
   const box = document.getElementById("error_box");
   box.innerText = text;
   box.style.display = "block";
-  setTimeout(()=> box.style.display = "none", 7000);
+  setTimeout(() => box.style.display = "none", 7000);
 }
 
-function addMessage(role, text, sources){
+function addMessage(role, text, sources) {
   const container = document.getElementById("chat_box");
   const div = document.createElement("div");
   div.className = "msg " + (role === "You" ? "user" : "bot");
   
-  // Convert markdown to HTML for bot messages
   let contentHTML = text;
   if (role !== "You" && typeof marked !== 'undefined') {
     try {
       contentHTML = marked.parse(text);
     } catch (e) {
-      console.error("Markdown parsing error:", e);
       contentHTML = text.replace(/\n/g, '<br>');
     }
   } else {
-    // For user messages or if marked is not available, just preserve line breaks
     contentHTML = text.replace(/\n/g, '<br>');
   }
   
-  let inner = `<div class="bubble"><div class="role">${role}</div><div class="content">${contentHTML}</div></div>`;
-  div.innerHTML = inner;
+  div.innerHTML = `<div class="bubble"><div class="role">${role}</div><div class="content">${contentHTML}</div></div>`;
   
-  if(sources && sources.length){
+  if (sources && sources.length) {
     const s = document.createElement("div");
     s.className = "sources";
-    s.innerHTML = "<b>Sources:</b><ul>" + sources.map(x=>`<li><a href="${x.link}" target="_blank">${x.title}</a></li>`).join("") + "</ul>";
+    s.innerHTML = "<b>Sources:</b><ul>" + sources.map(x => `<li><a href="${x.link}" target="_blank">${x.title}</a></li>`).join("") + "</ul>";
     div.appendChild(s);
   }
+  
   container.appendChild(div);
   container.scrollTop = container.scrollHeight;
 }
 
-async function sendMessage(e){
+function addQuizButton(quizParams) {
+  const container = document.getElementById("chat_box");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  div.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h2>🎯 Ready to Test Your Knowledge?</h2>
+        <p>Topic: <strong>${quizParams.topic}</strong> | Class ${quizParams.class_level} | ${quizParams.num_questions} Questions</p>
+      </div>
+      <button class="btn btn-primary" onclick="startQuiz(${JSON.stringify(quizParams).replace(/"/g, '&quot;')})">
+        🚀 Start Quiz
+      </button>
+    </div>
+  `;
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+async function startQuiz(params) {
+  try {
+    const res = await fetch("/api/quiz/generate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        session_id: sessionId,
+        topic: params.topic,
+        class_level: params.class_level,
+        num_questions: params.num_questions
+      })
+    });
+    
+    const data = await res.json();
+    currentQuizId = data.quiz_id;
+    selectedAnswer = null;
+    
+    displayQuestion(data);
+  } catch (err) {
+    showError("Failed to start quiz");
+    console.error(err);
+  }
+}
+
+function displayQuestion(data) {
+  const container = document.getElementById("chat_box");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  div.id = "current-quiz";
+  
+  div.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <div class="quiz-progress">Question ${data.current_question} of ${data.total_questions}</div>
+      </div>
+      <div class="quiz-question">
+        <h3>${data.question.text}</h3>
+        <div class="quiz-options" id="quiz-options-container">
+          ${data.question.options.map((opt, idx) => `
+            <div class="quiz-option" data-index="${idx}">
+              <strong>${String.fromCharCode(65 + idx)}.</strong> ${opt}
+            </div>
+          `).join('')}
+        </div>
+      </div>
+      <button class="btn btn-primary" onclick="submitQuizAnswer()" id="submit-quiz-btn" disabled>
+        Submit Answer
+      </button>
+    </div>
+  `;
+  
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+  
+  // Add click handlers to options after DOM is ready
+  setTimeout(() => {
+    const options = document.querySelectorAll('.quiz-option');
+    options.forEach((option) => {
+      option.addEventListener('click', function() {
+        const index = parseInt(this.getAttribute('data-index'));
+        selectAnswer(index);
+      });
+    });
+  }, 100);
+}
+
+function selectAnswer(index) {
+  selectedAnswer = index;
+  const options = document.querySelectorAll('.quiz-option');
+  options.forEach((opt, idx) => {
+    if (idx === index) {
+      opt.classList.add('selected');
+    } else {
+      opt.classList.remove('selected');
+    }
+  });
+  document.getElementById('submit-quiz-btn').disabled = false;
+}
+
+async function submitQuizAnswer() {
+  if (selectedAnswer === null) return;
+  
+  try {
+    const res = await fetch("/api/quiz/answer", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        quiz_id: currentQuizId,
+        answer: selectedAnswer
+      })
+    });
+    
+    const data = await res.json();
+    
+    // Remove current question
+    const current = document.getElementById("current-quiz");
+    if (current) current.remove();
+    
+    // Show feedback
+    showFeedback(data);
+    
+    if (data.completed) {
+      showQuizResult(data);
+    } else {
+      setTimeout(() => {
+        selectedAnswer = null;
+        displayQuestion(data);
+      }, 2000);
+    }
+  } catch (err) {
+    showError("Failed to submit answer");
+    console.error(err);
+  }
+}
+
+function showFeedback(data) {
+  const container = document.getElementById("chat_box");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  
+  const feedbackClass = data.was_correct ? "correct" : "incorrect";
+  const icon = data.was_correct ? "✅" : "❌";
+  const message = data.was_correct ? "Correct!" : "Incorrect";
+  
+  div.innerHTML = `
+    <div class="quiz-feedback ${feedbackClass}">
+      <strong>${icon} ${message}</strong>
+      <p style="margin-top: 8px;">${data.explanation}</p>
+    </div>
+  `;
+  
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+function showQuizResult(data) {
+  const container = document.getElementById("chat_box");
+  const div = document.createElement("div");
+  div.className = "msg bot";
+  
+  let grade = "";
+  if (data.percentage >= 80) grade = "Excellent! 🌟";
+  else if (data.percentage >= 60) grade = "Good job! 👍";
+  else if (data.percentage >= 40) grade = "Keep practicing! 📚";
+  else grade = "Need more study! 💪";
+  
+  div.innerHTML = `
+    <div class="quiz-result">
+      <h2>🎉 Quiz Complete!</h2>
+      <div class="quiz-score">${data.score}/${data.total}</div>
+      <p style="font-size: 1.2rem; margin: 8px 0;">${data.percentage}%</p>
+      <p style="color: #3b82f6; font-weight: 600; margin-bottom: 16px;">${grade}</p>
+      <button class="btn btn-primary" onclick="location.reload()">Take Another Quiz</button>
+    </div>
+  `;
+  
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+  currentQuizId = null;
+}
+
+async function sendMessage(e) {
   e.preventDefault();
   const txt = document.getElementById("message_input").value.trim();
-  if(!txt) return false;
+  if (!txt) return false;
+  
   addMessage("You", txt);
   document.getElementById("message_input").value = "";
   addMessage("Buddy", "<i>Thinking...</i>");
+  
   try {
     const res = await fetch("/api/chat", {
       method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({session_id: sessionId, text: txt})
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session_id: sessionId, text: txt })
     });
-    if(!res.ok){
-      const err = await res.text();
-      showError("Server error: " + res.status + " — check console.");
-      console.error("Server error:", err);
-      return false;
-    }
+    
     const data = await res.json();
     sessionId = data.session_id;
     localStorage.setItem(sessionKey, sessionId);
     document.getElementById("session_id").innerText = sessionId;
-
-    // remove last "Thinking" bot message
+    
     const chat = document.getElementById("chat_box");
     const last = chat.lastElementChild;
-    if(last && last.querySelector && last.querySelector(".content") && last.querySelector(".content").innerHTML.includes("Thinking")){
+    if (last && last.querySelector(".content")?.innerHTML.includes("Thinking")) {
       chat.removeChild(last);
     }
-
-    if(data.reply && data.reply.startsWith("LLM Error:")){
-      showError(data.reply);
+    
+    if (data.is_quiz) {
+      addMessage("Buddy", data.reply);
+      addQuizButton(data.quiz_params);
+    } else {
+      addMessage("Buddy", data.reply, data.sources);
     }
-    addMessage("Buddy", data.reply || "No reply", data.sources || []);
+    
     updateMemoryPanel();
-  } catch (err){
+  } catch (err) {
     console.error(err);
-    showError("Network error — make sure server is running and keys are configured.");
+    showError("Network error");
   }
+  
   return false;
 }
 
-async function updateMemoryPanel(){
-  if(!sessionId) return;
+async function updateMemoryPanel() {
+  if (!sessionId) return;
   try {
     const res = await fetch(`/api/history/${sessionId}`);
-    if(!res.ok) return;
     const data = await res.json();
     const mem = data.history.slice(-5).reverse();
     const ul = document.getElementById("memory_list");
     ul.innerHTML = "";
+    
     mem.forEach(it => {
       const li = document.createElement("li");
-      li.innerText = `${new Date(it.time).toLocaleString()}: ${it.user.substring(0,70)} -> ${it.bot.substring(0,70)}`;
+      const time = new Date(it.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      li.innerHTML = `
+        <span class="memory-time">${time}</span>
+        <div><strong>Q:</strong> ${it.user.substring(0, 50)}${it.user.length > 50 ? '...' : ''}</div>
+      `;
       ul.appendChild(li);
     });
-  } catch (e){ console.log(e); }
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 setTimeout(updateMemoryPanel, 500);
+
+// PDF Upload Handler
+async function handlePDFUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  addMessage("You", `📄 Uploaded: ${file.name}`);
+  addMessage("Buddy", "<i>Processing PDF and generating summary...</i>");
+  
+  const formData = new FormData();
+  formData.append('file', file);
+  
+  try {
+    const res = await fetch("/api/pdf/summarize", {
+      method: "POST",
+      body: formData
+    });
+    
+    const data = await res.json();
+    
+    // Remove "Processing" message
+    const chat = document.getElementById("chat_box");
+    const last = chat.lastElementChild;
+    if (last && last.querySelector(".content")?.innerHTML.includes("Processing")) {
+      chat.removeChild(last);
+    }
+    
+    if (data.success) {
+      addMessage("Buddy", data.summary);
+    } else {
+      showError(data.error || "Failed to process PDF");
+    }
+    
+    // Reset file input
+    event.target.value = '';
+  } catch (err) {
+    console.error(err);
+    showError("Failed to upload PDF");
+  }
+}
 </script>
 </body>
 </html>

@@ -120,6 +120,230 @@
         "user": "tell me about bugs bunny",
         "bot": "Okay, I can tell you about Bugs Bunny!\n\n1.  Explanation:\n\nBugs Bunny is an animated cartoon character, created by Warner Bros. He is best known for his starring roles in the Looney Tunes and Merrie Melodies series of animated short films. Bugs is an anthropomorphic gray hare or rabbit who is famous for his flippant, insouciant personality. He is also characterized by his Brooklyn accent, his catchphrase \"Eh, what's up, doc?\", and his fondness for carrots.\n\n2.  Worked Example:\n\nIn a typical Bugs Bunny cartoon, a character like Yosemite Sam or Elmer Fudd tries to hunt or outsmart Bugs. Bugs, however, always manages to outwit them through clever tricks and disguises. He often turns the tables on his antagonists, leaving them humiliated and defeated.\n\n3.  Summary:\n\nBugs Bunny is a famous cartoon rabbit from Looney Tunes.\nHe is known for his wit, catchphrases, and outsmarting others.\n\n4.  Sources:\n\n*   **Looney Tunes Official Website:** [https://www.looneytunes.com/](https://www.looneytunes.com/)\n*   **Wikipedia - Bugs Bunny:** [https://en.wikipedia.org/wiki/Bugs_Bunny](https://en.wikipedia.org/wiki/Bugs_Bunny)\n*   **IMDb - Bugs Bunny:** [https://www.imdb.com/character/ch0003085/](https://www.imdb.com/character/ch0003085/)\n",
         "sources": []
+      },
+      {
+        "time": "2025-11-30T10:22:28.859979",
+        "user": "Hello my name is sayan",
+        "bot": "Hello! I'm EduMentor, your AI study assistant. I'm here to help you understand various topics and concepts.\n\nOkay, I can help you with that!\n\n1.  Explanation:\n\nWhen introducing yourself, it's important to use correct grammar and capitalization. \"Hello, my name is Sayan\" is a good start, but proper capitalization enhances clarity. Names should always begin with a capital letter. A comma after \"Hello\" makes the greeting more natural.\n\n2.  Worked Example:\n\nThe corrected sentence is: \"Hello, my name is Sayan.\"\n\nThis version includes a comma after the greeting and capitalizes the name \"Sayan.\"\n\n3.  Summary:\n\nAlways capitalize names in a sentence.\nUse a comma after introductory greetings like \"Hello.\"\n\n4.  Sources:\n\n*   **Grammarly Handbook - Capitalization:** [https://www.grammarly.com/blog/capitalization/](https://www.grammarly.com/blog/capitalization/)\n*   **EnglishClub.com - Punctuation:** [https://www.englishclub.com/punctuation/](https://www.englishclub.com/punctuation/)\n*   **Purdue OWL - Grammar:** [https://owl.purdue.edu/owl/general_writing/grammar/index.html](https://owl.purdue.edu/owl/general_writing/grammar/index.html)\n",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:22:51.444081",
+        "user": "whats my name ?",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:23:17.517351",
+        "user": "write a python code to add two numbers",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:23:53.869634",
+        "user": "tell me about money plant",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:25:20.929272",
+        "user": "tell me about money plant",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:34:06.021901",
+        "user": "tell me about gemini",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:39:03.017744",
+        "user": "hello",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T10:50:36.848964",
+        "user": "hello",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T12:24:15.328196",
+        "user": "hello",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T15:58:12.847110",
+        "user": "hello",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with your studies. How can I assist you today?\n",
+        "sources": [
+          {
+            "title": "Adele - Hello (Official Music Video) - YouTube",
+            "link": "https://www.youtube.com/watch?v=YQHsXMglC9A",
+            "snippet": "Oct 22, 2015 ... Listen to \"Easy On Me\" here: http://Adele.lnk.to/EOM Pre-order Adele's new album \"30\" before its release on November 19: ..."
+          },
+          {
+            "title": "Hello Products",
+            "link": "https://www.hello-products.com/",
+            "snippet": "friendly products for friendly people. vegan, cruelty free, and thoughtfully formulated for everyone."
+          },
+          {
+            "title": "HelloFresh® Meal Kits | Get 10 Free Meals + Free Breakfast for Life",
+            "link": "https://www.hellofresh.com/",
+            "snippet": "HelloFresh Meal Kits | One free item per box with active subscription. Free meals applied as discount on first box, new subscribers only, varies by plan."
+          }
+        ]
+      },
+      {
+        "time": "2025-11-30T15:58:41.865883",
+        "user": "Can you make me a time table to study ?",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with your studies. Let's create a study timetable for you!\n\n### Creating a Study Timetable\n\nHere's a step-by-step guide to help you create an effective study timetable:\n\n1.  **Assess Your Current Schedule:**\n\n    *   Look at your existing commitments (classes, work, extracurricular activities).\n    *   Identify available time slots for studying.\n    *   Consider your energy levels at different times of the day.\n    *   *Example:* If you have classes from 9 AM to 12 PM and work from 2 PM to 6 PM, you need to find study slots around these times.\n2.  **Set Clear Goals:**\n\n    *   Define what you want to achieve each week.\n    *   Break down large tasks into smaller, manageable steps.\n    *   *Example:* Instead of \"Study for Math Exam,\" break it down into \"Review Chapter 1,\" \"Practice Problem Set 1.1,\" etc.\n3.  **Allocate Time Blocks:**\n\n    *   Assign specific time blocks for each subject or task.\n    *   Prioritize subjects based on difficulty or upcoming deadlines.\n    *   *Example:*\n        *   Monday: 6 PM - 8 PM: Math (Chapter 1 Review)\n        *   Tuesday: 6 PM - 8 PM: English (Essay Outline)\n4.  **Incorporate Breaks:**\n\n    *   Schedule short breaks (5-10 minutes) every hour to avoid burnout.\n    *   Plan longer breaks (30-60 minutes) for meals and relaxation.\n    *   *Example:* Study for 50 minutes, then take a 10-minute break to stretch or grab a snack.\n5.  **Choose a Format:**",
+        "sources": [
+          {
+            "title": "Free Online Timetable Maker - Create a Timetable | Canva",
+            "link": "https://www.canva.com/create/timetables/",
+            "snippet": "How to create a study timetable? · Look at your existing schedule and analyze if your goals still fit. · Pick a format that works for you. · When setting your ..."
+          },
+          {
+            "title": "MyStudyLife | Free Student Planner & Study App",
+            "link": "https://mystudylife.com/",
+            "snippet": "Transform your study habits and get better grades with MyStudyLife's game-changing student planner. Organize your schedule, track homework and achieve ..."
+          },
+          {
+            "title": "How to create an effective Study Schedule? : r/GetStudying",
+            "link": "https://www.reddit.com/r/GetStudying/comments/gjour3/how_to_create_an_effective_study_schedule/",
+            "snippet": "May 14, 2020 ... [deleted]. • 6y ago. how long did it take you to do this consistently? One_Ad5447. • 2y ago. What do you study if you don't mind me asking?"
+          }
+        ]
+      },
+      {
+        "time": "2025-11-30T16:23:07.427749",
+        "user": "stop the test",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with your studies. It sounds like you want to know how to stop a test, but I need a little more information to give you the best answer. Could you clarify what kind of test you're referring to? Here are a few possibilities:\n\n*   **A computer program test:** Are you running a unit test or some other kind of automated test for software?\n*   **A medical test:** Are you asking about how to stop a medical test or procedure?\n*   **An academic test:** Are you asking about how to stop an exam or quiz that you are taking?\n\nOnce I know what kind of test you mean, I can give you specific instructions.\n\n### Stopping a Computer Program Test\n\nIf you're referring to stopping a computer program test, here are some general methods:\n\n1.  **Using an IDE (Integrated Development Environment):**\n\n    *   Most IDEs like Visual Studio, IntelliJ IDEA, or Eclipse have a \"stop\" or \"cancel\" button in the test runner window.\n    *   Clicking this button should terminate the test execution.\n    *   *Example:* In Visual Studio, you can set the 'Terminate process on cancel' option to True to ensure the test stops immediately when you press cancel.\n2.  **Using Command Line:**\n\n    *   If you're running tests from the command line, you can usually stop the process by pressing `Ctrl + C`.\n    *   This sends an interrupt signal to the running process, causing it to terminate.\n3.  **Programmatically:**\n\n    *   In some testing frameworks, you can programmatically stop a test by raising an exception or calling a specific method to halt execution.\n    *   *Example:* In Python's `unittest` framework, you might use `self.fail(\"Stopping the test\")` to immediately stop the test.\n\n### Stopping a Medical Test\n\nIf you're referring to stopping a medical test, here's what you should do:\n\n1.  **Communicate with the Healthcare Provider:**\n\n    *   Immediately inform the doctor or technician administering the test that you want to stop.\n    *   Explain your reasons for wanting to stop the test.\n2.  **Understand the Consequences:**\n\n    *   Be aware that stopping a medical test mid",
+        "sources": [
+          {
+            "title": "STOP-Bang Questionnaire",
+            "link": "http://www.stopbang.ca/osa/screening.php",
+            "snippet": "STOP-Bang Questionnaire Is it possible that you have Obstructive Sleep Apnea (OSA)? Please answer the following questions below to determine if you might be at ..."
+          },
+          {
+            "title": "unit testing - How can I stop the Visual Studio Test Runner when a ...",
+            "link": "https://stackoverflow.com/questions/21291151/how-can-i-stop-the-visual-studio-test-runner-when-a-test-hangs",
+            "snippet": "Jan 22, 2014 ... I have found the solution to this issue. To stop the run after cancel is pressed, just set the 'Terminate process on cancel' option to True."
+          },
+          {
+            "title": "The Stop Test | SpringerLink",
+            "link": "https://link.springer.com/chapter/10.1007/978-1-4471-2109-1_38",
+            "snippet": "The stop test demonstrates isometric detrusor contractions in situations where the pressure generated by a detrusor contraction cannot be measured under ..."
+          }
+        ]
+      },
+      {
+        "time": "2025-11-30T16:35:20.284716",
+        "user": "Please help me write an essay on Mahabharat the eternal war",
+        "bot": "LLM Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:44:40.534660",
+        "user": "take a quiz on Plant reproduction class 6",
+        "bot": "LLM Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:46:03.706331",
+        "user": "hello",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:46:25.427659",
+        "user": "take a test on photosyenthisis",
+        "bot": "LLM Error: module 'google.genai' has no attribute 'generate_text'",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:47:04.551049",
+        "user": "hello",
+        "bot": "LLM Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:48:45.292206",
+        "user": "hello",
+        "bot": "LLM Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T16:49:42.692832",
+        "user": "hello",
+        "bot": "LLM Error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T17:04:25.009244",
+        "user": "hello",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with any questions you have or topics you'd like to explore.\n\nHow can I assist you with your studies today?\n",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T17:04:49.956518",
+        "user": "please take a quiz on Photosyentheisis",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with any questions you have or topics you'd like to explore.\n\nOkay, let's do a quiz on **photosynthesis**! Here we go:\n\n### Photosynthesis Quiz\n\n**Instructions:** Choose the best answer for each question.\n\n1.  **What is the primary purpose of photosynthesis?**\n    *   a) To produce carbon dioxide\n    *   b) To convert light energy into chemical energy\n    *   c) To absorb water from the soil\n    *   d) To release oxygen into the atmosphere\n\n2.  **Which of the following is NOT a reactant in photosynthesis?**\n    *   a) Carbon dioxide\n    *   b) Water\n    *   c) Oxygen\n    *   d) Light\n\n3.  **Where does photosynthesis primarily occur in plants?**\n    *   a) Roots\n    *   b) Stems\n    *   c) Leaves\n    *   d) Flowers\n\n4.  **What is the name of the pigment that captures light energy in plants?**\n    *   a) Melanin\n    *   b) Chlorophyll\n    *   c) Hemoglobin\n    *   d) Keratin\n\n5.  **What are the two main stages of photosynthesis?**\n    *   a) Krebs cycle and Calvin cycle\n    *   b) Glycolysis and Electron Transport Chain\n    *   c) Light-dependent reactions and Light-independent reactions (Calvin cycle)\n    *   d) Anabolism and Catabolism\n\n6.  **Which of the following is produced during the light-dependent reactions of photosynthesis?**\n    *   a) Glucose\n    *   b) Carbon dioxide\n    *   c) Oxygen\n    *   d) Water\n\n7.  **What is the main product of the Calvin cycle (light-independent reactions)?**\n    *   a) Oxygen\n    *   b) Glucose\n    *   c) Water\n    *   d) Carbon dioxide\n\n8.  **Which of the following environmental factors can affect the rate of photosynthesis?**\n    *   a) Light intensity\n    *   b) Carbon dioxide concentration\n    *   c) Temperature\n    *   d) All of the above\n\n9.  ",
+        "sources": []
+      },
+      {
+        "time": "2025-11-30T17:05:22.590100",
+        "user": "please summarize the pdf given above",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with any questions you have or topics you'd like to explore.\n\nI can certainly help you summarize the PDFs you've provided. Here are summaries for each:\n\n### Summary of PDF 1: \"A Short Guide to Writing Effective Test Questions\"\n\n*   This guide focuses on creating effective test questions.\n*   It emphasizes various subject areas and provides examples.\n*   It suggests giving credit for content appearing on an outline.\n\n### Summary of PDF 2: \"United States Drought Information - Climate Prediction Center\"\n\n*   This resource provides information on drought conditions in the United States.\n*   It includes summaries and narratives from official sources.\n*   It offers access to current drought outlook briefings and archives.\n\n### Summary of PDF 3: \"How to Write a Summary | Guide & Examples\"\n\n*   This guide explains how to write effective summaries.\n*   It emphasizes the goal of summarizing as providing a concise overview.\n*   It provides examples of article summaries suitable for assignments.\n\n### Summary\n\nI have provided summaries for each of the PDFs you listed. These summaries capture the main points of each document.\n\n### Helpful Sources\n\n1.  **A Short Guide to Writing Effective Test Questions:** (https://www.k-state.edu/ksde/alp/resources/Handout-Module6.pdf) - For more information on writing effective test questions.\n2.  **United States Drought Information - Climate Prediction Center:** (https://www.cpc.ncep.noaa.gov/products/Drought/) - For detailed drought information and outlooks.\n3.  **How to Write a Summary | Guide & Examples:** (https://www.scribbr.com/working-with-sources/how-to-summarize/) - For guidance on writing effective summaries.\n",
+        "sources": [
+          {
+            "title": "A Short Guide to Writing Effective Test Questions",
+            "link": "https://www.k-state.edu/ksde/alp/resources/Handout-Module6.pdf",
+            "snippet": "The example given above includes items from various subject areas. Page 39 ... could possibly give some credit for content which appears on an outline,."
+          },
+          {
+            "title": "United States Drought Information - Climate Prediction Center",
+            "link": "https://www.cpc.ncep.noaa.gov/products/Drought/",
+            "snippet": "... above the summary and narrative from the official SDO release. Please note, the SDO summary ... Current Drought Outlook Support Briefing PPT/PDF · Archive."
+          },
+          {
+            "title": "How to Write a Summary | Guide & Examples",
+            "link": "https://www.scribbr.com/working-with-sources/how-to-summarize/",
+            "snippet": "Nov 23, 2020 ... In any case, the goal of summarizing is to give ... An article summary like the above would be appropriate for a stand-alone summary assignment."
+          }
+        ]
+      },
+      {
+        "time": "2025-11-30T17:05:53.536515",
+        "user": "summarize the above pdf",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with any questions you have or topics you'd like to explore.\n\nOkay, I can summarize the web sources you've provided. Here are the summaries:\n\n### Summaries of Web Sources\n\n*   **Summary for Policymakers — Global Warming of 1.5 ºC:**\n    *   This is a special report by the IPCC (Intergovernmental Panel on Climate Change) on the impacts of global warming of 1.5°C above pre-industrial levels.\n    *   It was prepared in response to an invitation accepted in April 2016.\n\n*   **How to Write a Summary | Guide & Examples:**\n    *   This guide explains how to write effective summaries.\n    *   It suggests that an article summary should be appropriate for a stand-alone summary assignment.\n    *   It also mentions Scribbr's interactive Chat PDF tool.\n\n*   **Summary for Policymakers:**\n    *   This document refers to three special reports, including the one on Global Warming of 1.5°C.\n    *   It is part of the IPCC's Sixth Assessment Report (AR6).\n\n### Summary\n\nI have provided summaries for each of the web sources you listed. These summaries capture the main points of each document.\n\n### Helpful Sources\n\n1.  **IPCC Special Report on Global Warming of 1.5°C:** (https://www.ipcc.ch/sr15/chapter/spm/) - For detailed information on the impacts of global warming.\n2.  **How to Write a Summary | Guide & Examples:** (https://www.scribbr.com/working-with-sources/how-to-summarize/) - For guidance on writing effective summaries.\n3.  **IPCC Sixth Assessment Report (AR6):** (https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf) - For comprehensive climate change information.\n\nThese summaries provide concise overviews of the key points from each web source. They should help you quickly understand the main topics covered.\n",
+        "sources": [
+          {
+            "title": "Summary for Policymakers — Global Warming of 1.5 ºC",
+            "link": "https://www.ipcc.ch/sr15/chapter/spm/",
+            "snippet": "Download (pdf, 799 KB) ... The IPCC accepted the invitation in April 2016, deciding to prepare this Special Report on the impacts of global warming of 1.5°C above ..."
+          },
+          {
+            "title": "How to Write a Summary | Guide & Examples",
+            "link": "https://www.scribbr.com/working-with-sources/how-to-summarize/",
+            "snippet": "Nov 23, 2020 ... Tip Scribbr's interactive Chat PDF tool ... An article summary like the above would be appropriate for a stand-alone summary assignment."
+          },
+          {
+            "title": "Summary for Policymakers",
+            "link": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf",
+            "snippet": "2 The three Special Reports are: Global Warming of 1.5°C: An IPCC Special Report on the impacts of global warming of 1.5°C above pre-industrial levels and ..."
+          }
+        ]
+      },
+      {
+        "time": "2025-11-30T17:37:01.234420",
+        "user": "hello",
+        "bot": "Hello there! I'm EduMentor, your AI study assistant. I'm here to help you with any questions you have or topics you'd like to explore.\n\nHow can I assist you with your studies today?\n\n### Summary\n\nI have introduced myself and am ready to assist you with your studies.\n\n### Helpful Sources\n\nNo sources available.\n",
+        "sources": []
       }
     ]
   }
