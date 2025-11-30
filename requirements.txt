@@ -7,3 +7,5 @@ prometheus-client
 python-dotenv
 openai
 google-generativeai
+PyPDF2
+pytest

@@ -94,7 +94,7 @@ class EduAgent:
         msg = text.strip().lower()
         greetings = ["hi", "hello", "hey", "hii", "hola"]
         if msg in greetings:
-            return "Greet the user politely, introduce yourself as EduMentor, and ask how you can help with studies."
+            return "Greet the user politely, introduce yourself as Study Genie, and ask how you can help with studies."
         return text
     
     # ---------------------------
@@ -168,7 +168,7 @@ class EduAgent:
         ) if sources else "No sources available."
         
         prompt = f"""
-You are **EduMentor**, an AI study assistant. Always reply in a clean structured format.
+You are **Study Genie**, an AI study assistant. Always reply in a clean structured format.
 
 ### 📌 RULES FOR EVERY RESPONSE
 - If user greets → greet warmly + introduce yourself.
